@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.png">
+  <title>플랜표</title>
+
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sub.css">
+  <link rel="stylesheet" href="./css/common.css" />
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+    integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"
+    integrity="sha512-lFUdnIP0VHYatqtK0Mni2SDBS62JtUUPq9F26a/SDPZMHoGp3E1WO9gHXu1DddaN1ig1fn4mvHAqJ4x0kauKQw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- script -->
+  <script defer src="./js/toggle.js"></script>
+  
+</head>
+
+<form name="header">
+  <header>
+    <div class="header">
+      <div class="group-01">
+        <ul>
+          <li>
+            <a href="./landing.html">
+              <img src="./img/logo.png" alt="로고">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="group-02">
+        <ul>
+          <li><a href="./sign_up.html">회원가입</a></li>
+          <li class="btn-login"><a href="./login.html">로그인</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</form>
+
+<body>
+  <section class="inner">
+    <div class="price-list">
+      <div class="title">
+        <p>플랜을 비교해보세요.</p>
+      </div>
+      <form>
+        <div class="price">
+          <div class="price-box">
+            <p class="standard">Standard</p>
+            <p class="sub-text">초보셀러를 위한 플랜</p>
+            <div class="price-text">
+              <p>39,900<strong>원 / 월</strong></p>
+            </div>
+            <!-- 시작하기 버튼은 유료결제 회원이 아닌 사람에게 보여지는 버튼입니다. -->
+            <!-- <button class="btn btn-130" type="button"><span>시작하기</span></button> -->
+            <button onclick="alert('이미 사용중 입니다.')" class="btn-140" type="button"><span>현재 사용중</span></button>
+            <ul>
+              <li>
+                <span>1. 키워드 발굴</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>TOP 500, 연관검색어, 직접입력 분석</p><p class="red-color-left">무제한</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>직접입력 한 번에</p><p class="red-color-right-left">최대 50개</p><p>키워드 분석</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>즐겨찾기 수량</p><p class="red-color-right-left">최대 20개</p>
+              </li>
+              <li>
+                <p>
+                  <span></span>
+                </p>
+              </li>
+            </ul>
+            <div class="keyword">
+              <p>처음 부담 없이 사용하고 싶을 때</p>
+            </div>
+          </div>
+          <div class="price-box">
+            <p class="premium">Premium</p>
+            <p class="sub-text">매출 상승을 목적으로 하는 플랜</p>
+            <div class="price-text">
+              <p>59,900<strong>원 / 월</strong></p>
+            </div>
+            <button class="btn btn-150" type="button"><a href="./membership.html"><span>업그레이드</span></a></button>
+            <ul>
+              <li>
+                <span>1. 키워드 발굴</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>TOP 500, 연관검색어, 직접입력 분석</p><p class="red-color-left">무제한</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>직접입력 한 번에</p><p class="red-color-right-left">최대 100개</p><p>키워드 분석</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>즐겨찾기 수량</p><p class="red-color-left">최대 50개</p>
+              </li>
+              <li>
+                <span>2. 맞춤 키워드 발굴</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>맞춤 키워드 발굴</p><p class="red-color-left">하루 20회</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>즐겨찾기 수량</p><p class="red-color-left">최대 50개</p>
+              </li>
+              <li>
+                <span>3. 시장 분석</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>블루키워드 분석</p><p class="red-color-left">하루 20회</p>
+              </li>
+              <li>
+                <span>4. 상품 추천</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>Wing 분석</p><p class="red-color-left">하루 20회</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>Wing 분석 한 번에</p><p class="red-color-left">최대 5개</p><p>키워드 분석</p>
+              </li>
+            </ul>
+            <div class="keyword">
+              <p>🔥 소싱부스트가 추천하는 상품 🔥</p>
+            </div>
+          </div>
+          <div class="price-box">
+            <p class="platinum">Platinum</p>
+            <p class="sub-text">유통기업 및 전문셀러를 위한 플랜</p>
+            <div class="price-text">
+              <p>89,900<strong>원 / 월</strong></p>
+            </div>
+            <button class="btn btn-150" type="button"><a href="./membership.html"><span>업그레이드</span></a></button>
+            <ul>
+              <li>
+                <span>1. 키워드 발굴</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>TOP 500, 연관검색어, 직접입력 분석</p><p class="red-color-left">무제한</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>직접입력 한 번에</p><p class="red-color-right-left">최대 300개</p><p>키워드 분석</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>즐겨찾기 수량</p><p class="red-color-left">최대 100개</p>
+              </li>
+              <li>
+                <span>2. 맞춤 키워드 발굴</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>맞춤 키워드 발굴</p><p class="red-color-left">하루 50회</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>즐겨찾기 수량</p><p class="red-color-left">최대 100개</p>
+              </li>
+              <li>
+                <span>3. 시장 분석</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>블루키워드 분석</p><p class="red-color-left">하루 50회</p>
+              </li>
+              <li>
+                <span>4. 상품 추천</span>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>Wing 분석</p><p class="red-color-left">하루 50회</p>
+              </li>
+              <li>
+                <img src="./img/Check.png" alt="체크아이콘">
+                <p>Wing 분석 한 번에</p><p class="red-color-left">최대 10개</p><p>키워드 분석</p>
+              </li>
+            </ul>
+            <div class="keyword">
+              <p>유통/도매 전문 소싱이 목적일 때</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="inner">
+    <div class="function-list">
+      <div class="title">
+        <p>플랜 및 기능 안내</p>
+      </div>
+      <div class="table-list">
+        <table>
+          <thead>
+            <tr>
+              <th class="num-01">공통</th>
+              <th class="num-02">무료셀러</th>
+              <th class="num-03">Standard</th>
+              <th class="num-04">Premium</th>
+              <th class="num-05">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sub-01">동시로그인</td>
+              <td class="sub-02">1대</td>
+              <td class="sub-02">1대</td>
+              <td class="sub-02">1대</td>
+              <td class="sub-02">2대</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-list">
+        <table>
+          <thead>
+            <tr>
+              <th class="num-01">키워드 발굴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sub-01">TOP 500</td>
+              <td class="sub-02">하루 1회</td>
+              <td class="sub-02">무제한</td>
+              <td class="sub-02">무제한</td>
+              <td class="sub-02">무제한</td>
+            </tr>
+            <tr>
+              <td class="sub-01">연관검색어</td>
+              <td class="sub-02">하루 1회</td>
+              <td class="sub-02">무제한</td>
+              <td class="sub-02">무제한</td>
+              <td class="sub-02">무제한</td>
+            </tr>
+            <tr>
+              <td class="sub-01">직접입력</td>
+              <td class="sub-02">하루 1회</td>
+              <td class="sub-02">무제한</td>
+              <td class="sub-02">무제한</td>
+              <td class="sub-02">무제한</td>
+            </tr>
+            <tr>
+              <td class="sub-01">직접입력(최대 입력 키워드 수)</td>
+              <td class="sub-02">50개</td>
+              <td class="sub-02">50개</td>
+              <td class="sub-02">100개</td>
+              <td class="sub-02">300개</td>
+            </tr>
+            <tr>
+              <td class="sub-01">즐겨찾기</td>
+              <td class="sub-02">-</td>
+              <td class="sub-02">20개</td>
+              <td class="sub-02">50개</td>
+              <td class="sub-02">100개</td>
+            </tr>
+            <!--
+            <tr>
+              <td class="sub-01">엑셀 저장</td>
+              <td class="sub-02"><img src="./img/Check-black.png" alt="체크아이콘"></td>
+              <td class="sub-02"><img src="./img/Check-black.png" alt="체크아이콘"></td>
+              <td class="sub-02"><img src="./img/Check-black.png" alt="체크아이콘"></td>
+            </tr>
+            -->
+          </tbody>
+        </table>
+      </div>
+      <div class="table-list">
+        <table>
+          <thead>
+            <tr>
+              <th class="num-01">맞춤 키워드 발굴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sub-01">키워드 발굴</td>
+              <td class="sub-02">한 달 1회</td>
+              <td class="sub-02">하루 1회</td>
+              <td class="sub-02">하루 20회</td>
+              <td class="sub-02">하루 100회</td>
+            </tr>
+            <tr>
+              <td class="sub-01">즐겨찾기</td>
+              <td class="sub-02">-</td>
+              <td class="sub-02">-</td>
+              <td class="sub-02">50개</td>
+              <td class="sub-02">100개</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-list">
+        <table>
+          <thead>
+            <tr>
+              <th class="num-01">시장 분석</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sub-01">블루키워드 분석</td>
+              <td class="sub-02">한 달 1회</td>
+              <td class="sub-02">하루 1회</td>
+              <td class="sub-02">하루 20회</td>
+              <td class="sub-02">하루 50회</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-list">
+        <table>
+          <thead>
+            <tr>
+              <th class="num-01">상품 추천</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sub-01">Wing 분석</td>
+              <td class="sub-02">한 달 1회</td>
+              <td class="sub-02">하루 1회</td>
+              <td class="sub-02">하루 20회</td>
+              <td class="sub-02">하루 50회</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class="sub-01">Wing 분석(최대 입력 키워드 수)</td>
+              <td class="sub-02">1개</td>
+              <td class="sub-02">1개</td>
+              <td class="sub-02">5개</td>
+              <td class="sub-02">10개</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="inner">
+    <div class="faq">
+      <div class="title">
+        <p>FAQ</p>
+      </div>
+      <div class="container">
+        <ul class="accordion">
+          <li class="item">
+            <h2 class="accordionTitle">소싱부스트 멤버십 서비스는 왜 사용하나요?<span class="accIcon"></span></h2>
+            <div class="text">
+              소싱부스트 멤버십은 쿠팡판매에 최적화된 소싱방법을 제시합니다. 고민하지 않아도 키워드 발굴처를 다양하여 소싱부스트 멤버십을 사용하지 않았다면 절대 모르는 키워드를 찾아 소싱의 폭을 넓혀주고 시장분석 및 제품검증까지 한번에 볼수 있도록 편의성을 높혀줌으로 누구나 쿠팡에서 팔리는 제품을 소싱가능하도록 개발했습니다. 큰 도움이 될것이라 판단됩니다.
+            </div>
+          </li>
+          <li class="item">
+            <h2 class="accordionTitle">매월 결제를 직접해야하나요?<span class="accIcon"></span></h2>
+            <div class="text">소싱부스트는 월 멤버십운영을 함으로 한번 구독을 진행하다면 구독중단전까지 편리하게 자동으로 결제가 이루어집니다.
+            </div>
+          </li>
+          <li class="item">
+            <h2 class="accordionTitle">기존에 사용하는 멤버십을 업그레이드 하고 싶어요<span class="accIcon"></span></h2>
+            <div class="text">마이페이지에서 멤버십구독 항목에서 원하시는 플랜변경을 선택하여 업그레이드 하시면 됩니다. 업그레이드 시 기존 결제는 일할 계산되어 잔액이 환불처리됩니다.</div>
+          </li>
+          <li class="item">
+            <h2 class="accordionTitle">기존에 사용하는 멤버십을 다운그레이드 하고 싶어요<span class="accIcon"></span></h2>
+            <div class="text">멤버십 구독상태는 업그레이는 가능하지만 다운그레이드는 불가능합니다. 구독 완료 후 다시 구독부탁드립니다.</div>
+          </li>
+          <li class="item">
+            <h2 class="accordionTitle">멤버십 자동연장을 중단하고 싶어요<span class="accIcon"></span></h2>
+            <div class="text">멤버십 자동연장 중단은 마이페이지에서 구독취소를 선택하시면 됩니다.</div>
+          </li>
+          <li class="item">
+            <h2 class="accordionTitle">동시에 여러 사람이 사용가능할까요?<span class="accIcon"></span></h2>
+            <div class="text">멤버십 등급이 플레티넘인 경우 최대 3명가지 동시에 사용가능합니다. 플레티넘이하의 등급은 동시에 사용이 불가합니다.</div>
+          </li>
+
+          <li class="item">
+            <h2 class="accordionTitle">유료서비스를 체험을 해볼수 있을까요?<span class="accIcon"></span></h2>
+            <div class="text">프로모션 코드가 입력된 고객님이 해당되는 경우 스텐다드 멤버십 등급의 서비스를 최초 7일동안 사용가능합니다. 추가적으로 사용후기, 홍보하기 등의 이벤트를 통해 최대 한달까지 무료로 사용가능합니다.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+
+<footer class="bg-color">
+  <div class="arrow">
+    <span>↑</span>
+  </div>
+  <div class="footer">
+    <!-- inner div 추가 -->
+    <div class="inner">
+      <div class="left">
+        <!-- color라는 클래스명 추가 // css는 style.css파일에서 스타일 적용 했습니다. -->
+        <div class="left-01 color">
+          <p>(주)이지토탈솔루션</p>
+          <p>사업자등록번호: 605-86-36194</p>
+          <p>대표: 박수정</p>
+          <p>통신판매신고번호: 제 2022-서울금천-2606호</p>
+        </div>
+        <!-- color라는 클래스명 추가 -->
+        <div class="left-02 color">
+          <p>서울특별시 금천구 가산디지털2로 46, 3층 305호</p>
+          <p>etscorp2020@gmail.com</p>
+        </div>
+      </div>
+      <!-- color라는 클래스명 추가 -->
+      <div class="right color">
+        <p><a href="#">이용약관</a></p>
+        <p><a href="https://app.catchsecu.com/document/P/9a16b11a93ea320" target='_blank'>개인처리정보 방침</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
